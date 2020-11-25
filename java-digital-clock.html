@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Clock in Digital</title>
+
+    <link rel="stylesheet" href="java-digital-clock.css">
+
+
+  </head>
+  <body>
+
+      <div id="clock">
+      </div>
+    <div class="wrapper">
+      <div id="convertftinch">
+        <p>Lets convert ft to inch</p>
+        <p>
+          <label>Feet</label>
+          <input id="inputFeet"  placeholder="Feet" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
+        </p>
+        <p>Inches: <span id="outputInches"></span></p>
+      </div>
+      <div id="convertmikl">
+        <p>Lets convert mile to kilometer</p>
+        <p>
+          <label>Mile</label>
+          <input id="inputMile"  placeholder="Mile" oninput="LengthConverter2(this.value)" onchange="LengthConverter2(this.value)">
+        </p>
+        <p>kilometer: <span id="outputKLM"></span></p>
+      </div>
+    </div>
+    <script src="java-digital-clock.js"></script>
+  </body>
+</html>
